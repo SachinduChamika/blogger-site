@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Register | Neutronix</title>
+    <link rel="stylesheet" href="./../assets/css/style.css">
+    <script src="./../assets/js/main.js"></script>
+    <link rel="icon" type="image/png" href="./../assets/images/neutronix.png">
+</head>
+<style>
+    body {
+        background-color: #ffffff;
+        padding-top: 100px;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        margin: 0;
+    }
+
+    .neutronix-logo img {
+        margin-bottom: 20px;
+    }
+
+    .register-box {
+        background-color: #f0f0f1;
+        width: 375px;
+        border-radius: 10px;
+        padding: 30px 20px;
+        margin-bottom: 15px;
+        box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3);
+    }
+
+    .register-box p {
+        margin-bottom: 5px;
+        font-size: 14px;
+        color: #173C56;
+    }
+
+    .register-box input[type="text"],
+    .register-box input[type="email"],
+    .register-box input[type="password"] {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 15px;
+        border-radius: 5px;
+        border: 1px solid #cccfff;
+        font-size: 14px;
+        color: #173C56;
+    }
+
+    .register-box input[type="submit"] {
+        background-color: #173C56;
+        color: white;
+        border: none;
+        padding: 10px 20px;
+        border-radius: 5px;
+        font-size: 16px;
+        cursor: pointer;
+        width: auto;
+    }
+
+    .register-box input[type="button"]:hover {
+        background-color: #173C56;
+    }
+
+    .form-footer {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 15px;
+    }
+
+    .form-footer p {
+        margin: 0;
+        font-size: 14px;
+    }
+
+    .form-footer a {
+        color: #173C56;
+        font-size: 14px;
+    }
+
+    .form-footer a:hover {
+        text-decoration: underline;
+    }
+
+    .return-to-neutronix p {
+        text-align: center;
+        margin-top: 20px;
+        color: #173C56;
+    }
+
+    .return-to-neutronix a {
+        color: #173C56;
+        font-size: 14px;
+    }
+</style>
+
+<body>
+    <div class="neutronix-logo">
+        <a href="./../index.php" target="_self">
+            <img src="./../assets/images/neutronix.png" height="100px" alt="Neutronix Logo">
+        </a>
+    </div>
+
+    <div>
+        <div class="register-box">
+            <form action="./register.php" method="post">
+                <p>Username</p>
+                <input type="text" name="username" placeholder="johndoe" required>
+
+                <p>Email</p>
+                <input type="email" name="email" placeholder="johndoe@example.com" required>
+
+                <p>Password</p>
+                <input type="password" name="password" placeholder="John@12345" required>
+
+                <div class="form-footer">
+                    <p><strong>Have an account?</strong> <a href="./login.html">Login</a></p>
+                    <input type="submit" value="Register">
+                </div>
+            </form>
+        </div>
+
+        <div class="return-to-neutronix">
+            <a href="./../index.php">
+                <p>← Return to Neutronix</p>
+            </a>
+        </div>
+    </div>
+</body>
+
+</html>
